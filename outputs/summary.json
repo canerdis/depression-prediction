@@ -1,0 +1,33 @@
+{
+  "rows": 140700,
+  "positive_rate": 0.18171286425017769,
+  "majority_baseline_accuracy": 0.8182871357498223,
+  "folds": 5,
+  "best_model": "HistGradientBoosting",
+  "results": [
+    {
+      "model": "Majority baseline",
+      "roc_auc": 0.5,
+      "pr_auc": 0.18171286425017769,
+      "balanced_accuracy": 0.5,
+      "f1": 0.0,
+      "accuracy": 0.8182871357498224
+    },
+    {
+      "model": "Logistic Regression",
+      "roc_auc": 0.973963813266673,
+      "pr_auc": 0.9034059239799882,
+      "balanced_accuracy": 0.9194063984957154,
+      "f1": 0.79762885398202,
+      "accuracy": 0.9145131485429993
+    },
+    {
+      "model": "HistGradientBoosting",
+      "roc_auc": 0.9746711017323075,
+      "pr_auc": 0.9068107384701047,
+      "balanced_accuracy": 0.9214170054571518,
+      "f1": 0.804391787423555,
+      "accuracy": 0.9181023454157783
+    }
+  ]
+}

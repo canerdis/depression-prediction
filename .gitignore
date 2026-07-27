@@ -1,0 +1,15 @@
+# Kaggle competition data (train.csv 16 MB, test.csv 11 MB). Not tracked for two
+# reasons: redistributing the organiser's files here is not mine to do, and the
+# survey rows carry name/city/mental-health fields that do not need a second
+# public home. Download them from the competition page instead.
+train.csv
+test.csv
+
+# Old dataset from the original group project, superseded — see README.
+student_depression_dataset.csv
+
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/

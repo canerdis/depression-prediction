@@ -1,0 +1,22 @@
+{
+  "Logistic Regression": {
+    "model__C": 0.1,
+    "model__penalty": "l2"
+  },
+  "HistGradientBoosting (random)": {
+    "model__l2_regularization": 0.01207383486099604,
+    "model__learning_rate": 0.06774203331820908,
+    "model__max_features": 0.5066324805799333,
+    "model__max_iter": 208,
+    "model__max_leaf_nodes": 28,
+    "model__min_samples_leaf": 18
+  },
+  "HistGradientBoosting (bayes)": {
+    "model__l2_regularization": 0.0002522822581353757,
+    "model__learning_rate": 0.048696993328099916,
+    "model__max_features": 0.6667260831743131,
+    "model__max_iter": 282,
+    "model__max_leaf_nodes": 24,
+    "model__min_samples_leaf": 10
+  }
+}
