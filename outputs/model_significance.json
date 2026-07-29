@@ -1,0 +1,13 @@
+{
+  "mean_gap": 0.004091270926656237,
+  "lower": 0.002035772330000854,
+  "upper": 0.006248905893811482,
+  "contains_zero": false,
+  "n_boot": 1000,
+  "gap_direction": "HistGradientBoosting - Logistic Regression",
+  "pr_auc": {
+    "HistGradientBoosting": 0.9040339047060248,
+    "Logistic Regression": 0.8999015531926993
+  },
+  "status": "ok"
+}

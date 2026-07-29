@@ -96,7 +96,7 @@ def build_features(df: pd.DataFrame) -> pd.DataFrame:
     different cohorts: 0 rows carry both and only 21 carry neither. Same for
     Study / Job Satisfaction. Unifying each pair turns a column that is 80%
     "missing" into one that is fully populated, and keeps the cohort itself as
-    an explicit flag — students are depressed at 58.6% against 8.2% for working
+    an explicit flag. Students are depressed at 58.6% against 8.2% for working
     professionals, which is the strongest single signal in the data.
     """
     out = pd.DataFrame(index=df.index)
@@ -153,8 +153,8 @@ def build_models() -> dict[str, Pipeline]:
     """All models keep every row and handle imbalance with class weights.
 
     The previous approach deleted majority-class rows until the classes were
-    even. On this data that would discard 89,566 rows — 63.7% of the sample —
-    and it also rebalanced the test split, so accuracy was being measured on a
+    even. On this data that would discard 89,566 rows, 63.7% of the sample. It
+    also rebalanced the test split, so accuracy was being measured on a
     distribution that does not exist.
     """
     return {

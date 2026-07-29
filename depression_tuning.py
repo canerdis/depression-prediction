@@ -1,15 +1,15 @@
 """
 Automated hyperparameter search for the depression pipeline.
 
-Replaces hand-picked parameters with three search strategies — grid, randomized
-and Bayesian — mirroring the approach used in the Optimisation Techniques
+Replaces hand-picked parameters with three search strategies (grid, randomized
+and Bayesian), mirroring the approach used in the Optimisation Techniques
 project, and answers the question that matters: does the search actually beat
 the values that were chosen by hand?
 
 Evaluation is honest about tuning optimism. A 20% holdout is split off before
 any search runs and is never seen by a search. For each strategy the report
 shows the best inner cross-validated score, the holdout score, and the gap
-between them — the gap is how much the tuned score flatters itself.
+between them. That gap is how much the tuned score flatters itself.
 
 Run:
     python depression_tuning.py [--data-dir .] [--budget 12] [--folds 3]

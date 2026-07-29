@@ -1,0 +1,57 @@
+{
+  "split": {
+    "train": 84420,
+    "val": 28140,
+    "test": 28140,
+    "positive_rate": {
+      "train": 0.18171049514333096,
+      "val": 0.18173418621179815,
+      "test": 0.18169864960909737
+    }
+  },
+  "thresholds_f2": {
+    "Logistic Regression": 0.4637583121551839,
+    "HistGradientBoosting": 0.4917966345763249
+  },
+  "calibration": {
+    "Logistic Regression": {
+      "raw": 0.06436904492012475,
+      "sigmoid": 0.04693941795407138,
+      "isotonic": 0.047036380072792636,
+      "best": "sigmoid"
+    },
+    "HistGradientBoosting": {
+      "raw": 0.06107545030686411,
+      "sigmoid": 0.0461695075151273,
+      "isotonic": 0.04608836231094561,
+      "best": "isotonic"
+    }
+  },
+  "feature_redundancy": {
+    "individual_age": 0.3592629080054577,
+    "individual_is_student": 0.012625115413011234,
+    "joint": 0.41807461833032616,
+    "excess": 0.046186594911857226,
+    "pr_auc_with_age": 0.9040339047060248,
+    "pr_auc_without_age": 0.8570052221508295
+  },
+  "false_negatives": {
+    "missed": 387,
+    "positives": 5113,
+    "miss_rate": 0.07568941912771367,
+    "threshold": 0.4917966345763249
+  },
+  "model_significance": {
+    "mean_gap": 0.004091270926656237,
+    "lower": 0.002035772330000854,
+    "upper": 0.006248905893811482,
+    "contains_zero": false,
+    "n_boot": 1000,
+    "gap_direction": "HistGradientBoosting - Logistic Regression",
+    "pr_auc": {
+      "HistGradientBoosting": 0.9040339047060248,
+      "Logistic Regression": 0.8999015531926993
+    },
+    "status": "ok"
+  }
+}
