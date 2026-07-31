@@ -38,7 +38,7 @@ becomes one that is fully populated.
 
 ## Why the old notebook cannot run on this data
 
-Four failures, each verified against the file:
+Pointing it at the new file ends with zero rows. That is four separate failures rather than one, each verified against the file:
 
 1. **`dropna()` returns 0 of 140,700 rows.** Every row is null on either the
    academic block or the work block, so dropping incomplete rows drops the
@@ -136,8 +136,9 @@ predicts student status with 84.5% accuracy. `is_student` scores only 0.0026,
 not because the cohort is irrelevant, but because permuting it leaves `age`
 carrying the same information.
 
-That much holds up. The claim that the two are *twins* does not, and the
-evaluation layer below tested it. Permuting `age` alone costs 0.3593 PR-AUC;
+That much holds up. The claim that the two are *twins* does not. I had written
+it that way before testing it, and the evaluation layer below is where it fell
+over. Permuting `age` alone costs 0.3593 PR-AUC;
 `is_student` alone costs 0.0126; together they cost 0.4181, an excess of only
 +0.0462 over the sum. Real twins would each be cheap to permute alone, because
 the survivor carries the signal for both. `is_student` fits that; `age` does
